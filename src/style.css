@@ -278,7 +278,7 @@ h2 {
 }
 .art-note {
   position: absolute;
-  top: 5px;
+  top: 50px;
   left: 43px;
   color: var(--muted);
   font-size: 9px;
