@@ -1,4 +1,4 @@
-/* Source and retrieval details: ./brand.json. Scoped until applied to the site. */
+/* Source: ./brand.json. Applied through the HTML root .kangteacher-brand. */
 .kangteacher-brand {
   --brand-primary: #e31e24;
   --brand-primary-dark: #c91a1f;
