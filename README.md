@@ -62,4 +62,18 @@ npm run test:e2e
 
 반응형 랜딩 페이지, 자동 스크롤 합격증 갤러리, 확대 보기, 재생 제어, 교육·수업 소개, 상담 링크를 구현했습니다. 자동 재생은 마우스/키보드 탐색 중 정지하고, 운영체제의 움직임 최소화 설정을 존중합니다. 합격증 목록은 터치로 수동 스크롤할 수 있습니다.
 
-`main`에는 초기 골격만 두고, 완료된 홈페이지는 작업 브랜치에서 `develop` 대상으로 PR을 거쳐 통합합니다. 실제 공개 배포는 별도 단계입니다.
+완료된 홈페이지는 작업 브랜치에서 `develop` 대상으로 PR을 거쳐 통합하고, 검증된 `develop`을 `main`으로 병합해 출시합니다.
+
+## Vercel 배포
+
+`vercel.json`에서 Vite, `npm ci`, `npm run build`, 결과 디렉터리 `dist`를 지정합니다. Vercel의 Git 연동을 사용하는 경우 Production Branch는 `main`으로 설정합니다.
+
+CLI로 배포할 때에는 최신 `main`에서 다음을 실행합니다.
+
+```sh
+npx vercel login
+npx vercel link
+npx vercel --prod
+```
+
+`.vercelignore`는 홈페이지 빌드에 필요한 파일만 업로드하도록 허용 목록을 사용합니다. `private/`, 환경 변수 파일, 원본 합격증 처리 자료와 테스트 산출물은 업로드하지 않습니다. 공개 정적 자산은 검수된 `public/`에만 추가해야 합니다. 로컬 프로젝트 연결 정보인 `.vercel/`도 Git에서 제외합니다.
