@@ -6,3 +6,4 @@ dist/
 private/
 test-results/
 playwright-report/
+.vercel/
