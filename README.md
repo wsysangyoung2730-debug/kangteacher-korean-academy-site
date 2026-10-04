@@ -2,6 +2,17 @@
 
 강쌤 국어학원의 공식 홈페이지 개발 저장소입니다.
 
+## 사용 기술
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Vite](https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Playwright](https://img.shields.io/badge/PLAYWRIGHT-2EAD33?style=for-the-badge)
+
+HTML·CSS·JavaScript로 화면을 구현하고, Vite와 Node.js로 개발·빌드하며, Playwright로 브라우저 동작을 검증합니다.
+
 참고 사이트에서 확보한 실제 로고와 색상은 [브랜드 참고 자료](docs/brand-reference.md)에 정리했습니다. `public/brand/`의 원본 로고를 헤더·푸터에 적용하고, 빨강·검정·흰색을 중심으로 홈페이지 색상을 구성했습니다. 원본 로고 파일은 그대로 보존합니다.
 
 ## Git 규칙
