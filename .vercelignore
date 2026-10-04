@@ -5,5 +5,5 @@
 !package-lock.json
 !vite.config.js
 !vercel.json
-!src/
-!public/
+!src
+!public
