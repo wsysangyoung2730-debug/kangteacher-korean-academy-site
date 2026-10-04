@@ -1,0 +1,31 @@
+{
+  "name": "강쌤 국어",
+  "retrievedOn": "2026-10-03",
+  "source": "https://3000-i2jfuj3rxcmkpzyqsxxjn-2e1b9533.sandbox.gensparksite.com/",
+  "logo": {
+    "file": "kangteacher-logo.png",
+    "source": "https://3000-i2jfuj3rxcmkpzyqsxxjn-2e1b9533.sandbox.gensparksite.com/upload_files/logo.png",
+    "width": 606,
+    "height": 129,
+    "format": "png",
+    "transparent": true,
+    "modified": false
+  },
+  "colors": {
+    "primary": "#e31e24",
+    "primaryDark": "#c91a1f",
+    "secondary": "#1a1a1a",
+    "text": "#333333",
+    "textLight": "#666666",
+    "backgroundLight": "#f8f9fa",
+    "backgroundWhite": "#ffffff",
+    "border": "#e0e0e0"
+  },
+  "typography": {
+    "family": "Noto Sans KR",
+    "fallback": "sans-serif",
+    "weights": [300, 400, 500, 700, 900]
+  },
+  "stylesSource": "https://3000-i2jfuj3rxcmkpzyqsxxjn-2e1b9533.sandbox.gensparksite.com/css/style.css",
+  "note": "사용자 제공 참고 사이트의 CSS 값입니다. 별도 공식 브랜드 가이드에서 확인한 값이나 로고 이미지의 픽셀 색상 추정값은 아닙니다."
+}

@@ -1,0 +1,13 @@
+/* Source: ./brand.json. Applied through the HTML root .kangteacher-brand. */
+.kangteacher-brand {
+  --brand-primary: #e31e24;
+  --brand-primary-dark: #c91a1f;
+  --brand-secondary: #1a1a1a;
+  --brand-text: #333333;
+  --brand-text-light: #666666;
+  --brand-background-light: #f8f9fa;
+  --brand-background-white: #ffffff;
+  --brand-border: #e0e0e0;
+  --brand-font: "Noto Sans KR", sans-serif;
+  --brand-gradient: linear-gradient(135deg, #e31e24 0%, #c91a1f 100%);
+}

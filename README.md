@@ -2,6 +2,19 @@
 
 강쌤 국어학원의 공식 홈페이지 개발 저장소입니다.
 
+## 사용 기술
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Vite](https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Playwright](https://img.shields.io/badge/PLAYWRIGHT-2EAD33?style=for-the-badge)
+
+HTML·CSS·JavaScript로 화면을 구현하고, Vite와 Node.js로 개발·빌드하며, Playwright로 브라우저 동작을 검증합니다.
+
+참고 사이트에서 확보한 실제 로고와 색상은 [브랜드 참고 자료](docs/brand-reference.md)에 정리했습니다. `public/brand/`의 원본 로고를 헤더·푸터에 적용하고, 빨강·검정·흰색을 중심으로 홈페이지 색상을 구성했습니다. 원본 로고 파일은 그대로 보존합니다.
+
 ## Git 규칙
 
 - 출시: `main`, 통합 확인: `develop`
@@ -10,3 +23,57 @@
 - 작업 브랜치에 `develop`을 먼저 병합하고 확인한 후, `develop` 대상으로 PR을 생성합니다.
 
 원본 합격증과 개인정보는 저장소에 추가하지 않습니다.
+
+## 실행
+
+Node.js 22.12 이상을 권장합니다.
+
+```sh
+npm ci
+npm run dev
+```
+
+`npm run build`로 `dist/`를 생성하고, `npm run preview`로 빌드 결과를 확인합니다. 정적 호스팅에 `dist/`를 배포할 수 있습니다. 기본 경로는 상대 경로이므로 하위 경로 배포도 지원합니다.
+
+## 검증
+
+```sh
+npm test
+npx playwright install chromium
+npm run test:e2e
+```
+
+자산 수·메타데이터, 데스크톱/모바일 레이아웃, 메뉴, 합격증 확대 및 닫기, 자동 재생 정지, 움직임 최소화 설정을 확인합니다.
+
+## 콘텐츠와 개인정보
+
+- 합격 실적: 사용자 제공 2026학년도 합격증 16건, 대학 13곳. 동일 학생의 복수 합격을 포함합니다. 최종 등록 인원, 합격률, 학원 수업의 단독 효과를 뜻하지 않습니다.
+- 공개 이미지: `public/certificates/*.webp`. 이름, 생년월일, 수험번호, 출신 고교, 증서 고유번호를 불투명 픽셀로 덮고 새로 인코딩했습니다. EXIF/XMP/IPTC 메타데이터와 이름이 들어간 파일명은 사용하지 않습니다.
+- 모든 이미지의 가림 영역 픽셀과 메타데이터를 검사하고, 16건을 시각적으로 대조했습니다. 원본, 원본 경로와 개인정보가 있는 처리 설정은 커밋하지 않습니다.
+- 대학/학과/합격 연도는 제공된 합격증에 근거합니다. 데이터 수정: `src/results.js`.
+- 교육 소개는 공개 학원 소개에서 확인된 사고력 중심, 학생별 실력·진도 확인, 내신·수능, 자체 교재를 바탕으로 작성한 1차 문안입니다. 블로그 전체 본문을 분석한 확정 문안은 아닙니다.
+- 수업 시간표, 수강료, 지점별 주소는 확정 자료가 없어 싣지 않았습니다. 상담 전화는 공개 학원 소개의 `010-8332-9579`이며 출시 전 운영자가 재확인해야 합니다.
+- 블로그 카드의 그래픽은 CSS 편집 디자인이며 실제 시설 사진을 표현하지 않습니다. 해당 카드는 공식 블로그 홈으로 연결됩니다.
+- 상담은 전화·문자 앱과 블로그로 연결합니다. 서버에 개인정보를 수집하는 폼은 없습니다.
+
+참고: [공식 블로그](https://blog.naver.com/kangteacher_1215), [공개 학원 소개](https://classup.io/academies/fe075236-e551-4a29-8a36-dd0c46b55a76).
+
+## 1차 범위
+
+반응형 랜딩 페이지, 자동 스크롤 합격증 갤러리, 확대 보기, 재생 제어, 교육·수업 소개, 상담 링크를 구현했습니다. 자동 재생은 마우스/키보드 탐색 중 정지하고, 운영체제의 움직임 최소화 설정을 존중합니다. 합격증 목록은 터치로 수동 스크롤할 수 있습니다.
+
+완료된 홈페이지는 작업 브랜치에서 `develop` 대상으로 PR을 거쳐 통합하고, 검증된 `develop`을 `main`으로 병합해 출시합니다.
+
+## Vercel 배포
+
+`vercel.json`에서 Vite, `npm ci`, `npm run build`, 결과 디렉터리 `dist`를 지정합니다. Vercel의 Git 연동을 사용하는 경우 Production Branch는 `main`으로 설정합니다.
+
+CLI로 배포할 때에는 최신 `main`에서 다음을 실행합니다.
+
+```sh
+npx vercel login
+npx vercel link
+npx vercel --prod
+```
+
+`.vercelignore`는 홈페이지 빌드에 필요한 파일만 업로드하도록 허용 목록을 사용합니다. `private/`, 환경 변수 파일, 원본 합격증 처리 자료와 테스트 산출물은 업로드하지 않습니다. 공개 정적 자산은 검수된 `public/`에만 추가해야 합니다. 로컬 프로젝트 연결 정보인 `.vercel/`도 Git에서 제외합니다.

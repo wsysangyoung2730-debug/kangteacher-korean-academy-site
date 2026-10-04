@@ -1,0 +1,9 @@
+# Upload only the files required to build the public website.
+/*
+!index.html
+!package.json
+!package-lock.json
+!vite.config.js
+!vercel.json
+!src/
+!public/
