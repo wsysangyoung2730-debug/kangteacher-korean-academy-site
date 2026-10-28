@@ -2,6 +2,8 @@
 
 강쌤 국어학원의 공식 홈페이지 개발 저장소입니다.
 
+[강쌤 국어학원 홈페이지 바로가기 →](https://kangteacher-korean-academy-site.vercel.app/)
+
 ## 사용 기술
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
