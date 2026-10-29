@@ -38,40 +38,200 @@
         메뉴 <span>＋</span>
       </button>
       <nav id="navigation" aria-label="주요 메뉴">
-        <a href="#results">합격 소식</a><a href="#philosophy">강쌤의 교육</a
-        ><a href="#curriculum">수업 안내</a><a href="#journal">학원 이야기</a
-        ><a class="nav-contact" href="#contact">상담 문의 <span>↗</span></a>
+        <a href="#philosophy">수업 방식</a>
+        <a href="#curriculum">수업 안내</a>
+        <a href="#results">합격 소식</a>
+        <a href="#journal">학원 이야기</a>
+        <a class="nav-contact" href="#contact"
+          >수강 상담 <span aria-hidden="true">↗</span></a
+        >
       </nav>
     </header>
     <main id="main">
-      <section class="hero section-width">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> 한 명 한 명의 가능성을 읽다</p>
-          <h1>국어를 이해하는 힘,<br />가능성을 바꾸는 <em>결과.</em></h1>
-          <p class="hero-description">
-            학생마다 다른 출발점, 끝까지 함께하는 국어.<br />생각하는 힘을
-            기르고, 다음 도약을 준비합니다.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#contact"
-              >우리 아이 국어 상담하기 <span>↗</span></a
-            ><a class="text-link" href="#philosophy"
-              >강쌤의 교육을 만나보세요 <span>↓</span></a
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner section-width">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> 고등 내신 · 수능 국어</p>
+            <h1 id="hero-title">
+              내신의 빈틈을 채우고,<br />수능의 <em>사고력</em>을 기르다.
+            </h1>
+            <p class="hero-description">
+              국어를 이해하는 힘, 강쌤 국어학원에서.<br />한 문장을 깊이 읽는
+              공부가 다음 가능성을 만듭니다.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#curriculum"
+                >수업 안내 <span aria-hidden="true">→</span></a
+              >
+              <a class="button outline" href="#contact"
+                >수강 상담 <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <p class="hero-caption">읽고, 이해하고, 스스로 설명하는 국어.</p>
+          </div>
+          <figure class="hero-visual">
+            <img
+              src="/images/classroom-editorial.webp"
+              width="1536"
+              height="1024"
+              alt="AI로 제작한, 지문의 주장과 근거를 설명하는 수업 예시 장면"
+              fetchpriority="high"
+            />
+            <figcaption>AI로 제작한 수업 예시 이미지</figcaption>
+            <div class="photo-label" aria-hidden="true">
+              <span>KANGTEACHER KOREAN</span
+              ><strong>생각하는 힘을<br />가르칩니다.</strong>
+            </div>
+          </figure>
+        </div>
+      </section>
+      <div
+        class="course-shortcuts section-width"
+        aria-label="국어 수업 바로가기"
+      >
+        <a href="#school-course"
+          ><span class="shortcut-number">01</span>
+          <div>
+            <span class="eyebrow">SCHOOL EXAMS</span>
+            <h2>고등 내신</h2>
+            <p>학교 수업의 핵심을 단단하게</p>
+          </div>
+          <span class="shortcut-arrow" aria-hidden="true">↗</span></a
+        >
+        <a href="#exam-course"
+          ><span class="shortcut-number">02</span>
+          <div>
+            <span class="eyebrow">COLLEGE ENTRANCE</span>
+            <h2>수능 국어</h2>
+            <p>지문을 읽는 기준을 명확하게</p>
+          </div>
+          <span class="shortcut-arrow" aria-hidden="true">↗</span></a
+        >
+      </div>
+      <a class="admission-notice section-width" href="#results"
+        ><strong>2026학년도 합격 소식</strong
+        ><span>POSTECH · 고려대학교 · 성균관대학교 외</span
+        ><span class="notice-link"
+          >합격 자료 보기 <b aria-hidden="true">→</b></span
+        ></a
+      >
+
+      <section
+        id="philosophy"
+        class="lesson-section section-space"
+        aria-labelledby="lesson-title"
+      >
+        <div class="section-width">
+          <div class="section-top lesson-intro">
+            <div>
+              <p class="eyebrow"><span></span> 강쌤의 수업 방식</p>
+              <h2 id="lesson-title">
+                읽는 법부터,<br />답을 찾는 <em>근거</em>까지.
+              </h2>
+            </div>
+            <p>
+              정답 하나를 맞히는 데서 한 걸음 더.<br />왜 그 답인지, 스스로
+              설명하는 공부를 합니다.
+            </p>
+          </div>
+          <div class="lesson-story is-static" data-step="2">
+            <div class="lesson-steps">
+              <article
+                class="lesson-step is-active"
+                id="read-step"
+                data-step="0"
+              >
+                <span class="step-number">01 / READ</span>
+                <h3>지문을 읽다.</h3>
+                <p>
+                  문장과 문장의 관계를 살피며<br />글 전체의 흐름을 이해합니다.
+                </p>
+                <span class="step-detail">무엇을 말하고 있는가?</span>
+              </article>
+              <article class="lesson-step" id="evidence-step" data-step="1">
+                <span class="step-number">02 / CONNECT</span>
+                <h3>근거를 찾다.</h3>
+                <p>
+                  중요한 문장에 밑줄을 긋고,<br />선지와 지문의 연결을
+                  확인합니다.
+                </p>
+                <span class="step-detail">어느 문장이 답을 뒷받침하는가?</span>
+              </article>
+              <article class="lesson-step" id="explain-step" data-step="2">
+                <span class="step-number">03 / EXPLAIN</span>
+                <h3>스스로 설명하다.</h3>
+                <p>
+                  답을 고른 이유를 자신의 말로 정리하며<br />다음 문제에도
+                  적용할 힘을 기릅니다.
+                </p>
+                <span class="step-detail">왜 이 답이어야 하는가?</span>
+              </article>
+            </div>
+            <div class="lesson-stage">
+              <div class="kinetic-heading" aria-hidden="true">
+                <span class="kinetic-echo">읽다 읽다</span>
+                <span class="kinetic-word word-read">지문을 읽다<b>.</b></span>
+                <span class="kinetic-word word-connect"
+                  >근거를 찾다<b>.</b></span
+                >
+                <span class="kinetic-word word-explain"
+                  >스스로 설명하다<b>.</b></span
+                >
+                <span class="kinetic-echo">읽다 읽다</span>
+              </div>
+              <article class="lesson-paper" aria-label="독해 학습 예시">
+                <div class="paper-top">
+                  <span>독해의 기준</span><span>학습 예시 · 01</span>
+                </div>
+                <h3>주장과 근거</h3>
+                <p class="paper-instruction">
+                  다음 글의 중심 생각을 찾아보세요.
+                </p>
+                <p class="reading-passage">
+                  정보를 쉽게 접할 수 있다고 해서 그 내용을 모두 믿을 수 있는
+                  것은 아니다. 같은 사건도 전달하는 사람에 따라 다르게 설명될 수
+                  있다.
+                  <mark
+                    >따라서 정보를 읽을 때는 출처를 확인하고, 주장을 뒷받침하는
+                    근거를 살펴야 한다.</mark
+                  >
+                </p>
+                <div class="worksheet-question">
+                  <span>Q.</span>
+                  <h4>이 글에서 강조하는 읽기 태도는?</h4>
+                </div>
+                <ol class="worksheet-options">
+                  <li><span>①</span> 많은 사람이 읽는 정보를 먼저 선택한다.</li>
+                  <li class="correct-option">
+                    <span>②</span> 정보의 출처와 주장의 근거를 확인한다.
+                  </li>
+                  <li>
+                    <span>③</span> 같은 사건에 대한 설명은 모두 같다고 본다.
+                  </li>
+                </ol>
+                <div class="teacher-note">
+                  <span>왜 이 답일까?</span>
+                  <p>
+                    ‘따라서’ 뒤의 문장이 글의 주장을 정리합니다.<br />선지 ②는
+                    그 핵심을 담고 있습니다.
+                  </p>
+                </div>
+                <div class="paper-footer">
+                  <span>읽기 → 근거 → 설명</span
+                  ><span>홈페이지를 위한 독해 예시</span>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="lesson-outro">
+            <p>
+              깊이 읽는 힘이,<br class="mobile-only" />
+              내신과 수능의 바탕이 됩니다.
+            </p>
+            <a class="text-link" href="#contact"
+              >우리 아이에게 맞는 수업 상담 <span aria-hidden="true">↗</span></a
             >
           </div>
-          <div class="hero-caption">
-            <span class="tiny-line"></span> 깊이 이해하고, 스스로 풀어내는 국어
-          </div>
-        </div>
-        <div class="hero-art" aria-label="2026학년도 대학 합격 소식">
-          <div class="orbit"></div>
-          <span class="art-note">A NEW CHAPTER<br />BEGINS HERE.</span>
-          <div id="hero-certificates"></div>
-          <div class="round-seal">
-            <span>2026</span><strong>합격을<br />축하합니다</strong
-            ><small>YOUR NEXT CHAPTER</small>
-          </div>
-          <span class="art-bottom">함께 쌓아온 시간, 새로운 시작으로.</span>
         </div>
       </section>
       <section id="results" class="results-section">
@@ -107,59 +267,6 @@
           <span>합격증을 누르면 크게 볼 수 있어요 <span>↗</span></span>
         </div>
       </section>
-      <section id="philosophy" class="philosophy section-width section-space">
-        <div class="section-intro">
-          <p class="eyebrow">OUR PHILOSOPHY</p>
-          <h2>문제 너머의 생각을,<br />성적 너머의 가능성을.</h2>
-          <p>
-            국어 공부의 시작은 학생을 이해하는 데 있습니다.<br />지금 어디에서
-            어려움을 느끼는지,<br />어떤 설명이 필요한지. 강쌤은 그 차이를
-            살핍니다.
-          </p>
-          <a
-            class="text-link"
-            href="https://blog.naver.com/kangteacher_1215"
-            target="_blank"
-            rel="noopener noreferrer"
-            >블로그에서 교육 이야기 읽기 ↗</a
-          >
-        </div>
-        <div class="principles">
-          <article>
-            <span>01</span>
-            <div>
-              <h3>한 명 한 명, 깊이 살피는 지도</h3>
-              <p>
-                학생의 실력과 진도를 직접 확인하며, 각자의 출발점에 맞는 국어
-                공부를 함께합니다.
-              </p>
-            </div>
-            <b>↗</b>
-          </article>
-          <article>
-            <span>02</span>
-            <div>
-              <h3>답을 넘어, 이해하는 힘</h3>
-              <p>
-                국어를 사고력의 관점에서 바라봅니다. 지문을 이해하고 답의 근거를
-                찾는 힘을 중요하게 생각합니다.
-              </p>
-            </div>
-            <b>↗</b>
-          </article>
-          <article>
-            <span>03</span>
-            <div>
-              <h3>배움을 실제 문제 해결로</h3>
-              <p>
-                내신과 수능, 각자의 목표를 향해. 모의고사와 문제 풀이를 통해
-                배운 내용을 적용합니다.
-              </p>
-            </div>
-            <b>↗</b>
-          </article>
-        </div>
-      </section>
       <section id="curriculum" class="curriculum section-space">
         <div class="section-width">
           <div class="section-top">
@@ -173,23 +280,23 @@
             </p>
           </div>
           <div class="course-grid">
-            <article class="course">
+            <article class="course" id="middle-course">
               <span class="course-index">01 / FOUNDATION</span>
-              <div class="course-symbol">가<span>나</span></div>
+
               <h3>중등 국어</h3>
               <p>국어의 기초를 다지며<br />고등 국어를 준비하는 시간.</p>
               <a href="#contact">중등 수업 문의 <span>↗</span></a>
             </article>
-            <article class="course">
+            <article class="course" id="school-course">
               <span class="course-index">02 / SCHOOL EXAMS</span>
-              <div class="course-symbol">읽<span>다</span></div>
+
               <h3>고등 내신</h3>
               <p>학교별 학습 내용을 살피고<br />시험의 핵심을 이해하는 공부.</p>
               <a href="#contact">내신 수업 문의 <span>↗</span></a>
             </article>
-            <article class="course">
+            <article class="course" id="exam-course">
               <span class="course-index">03 / NEXT LEVEL</span>
-              <div class="course-symbol">풀<span>다</span></div>
+
               <h3>수능 국어</h3>
               <p>
                 지문 이해부터 문제 적용까지,<br />실전으로 이어지는 국어 학습.
