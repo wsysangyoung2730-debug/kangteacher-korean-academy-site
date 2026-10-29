@@ -1,0 +1,9 @@
+{
+  "asset": "public/images/classroom-editorial.webp",
+  "kind": "AI-generated illustrative classroom photograph; not actual academy staff or facilities",
+  "tool": "Built-in image_gen",
+  "prompt": "Use case: photorealistic-natural\nAsset type: landscape website hero photograph for a Korean language exam academy, 3:2 composition.\nPrimary request: A calm premium editorial classroom scene, a Korean male teacher in a dark charcoal sweater, seen mostly from behind/side without recognizable facial details, explaining at a large charcoal blackboard to three high-school age students seen from behind. Natural Korean academy classroom with light oak desks and open workbooks. Frame teacher right-of-center, students bottom foreground, blank board negative space to left.\nLighting/mood: warm natural window light from left, authentic and studious, quiet confidence. Warm white, charcoal, oak, subtle red chalk accents.\nText on board only: \"주장 → 근거 → 해석\" in neat natural Korean chalk handwriting. Underline 근거 lightly in red.\nConstraints: photograph only, no website UI, no logo, no watermark, no captions, no recognizable real person, no invented academy name, no scores, no certificates. This is illustrative generated imagery, not documentary. All people fully clothed and studying. Professional editorial photo, not stock posing.",
+  "source": "exec-c07adcab-4a64-4aaf-af25-d6e3cc2e8a1d.png",
+  "processing": "WebP encoding (quality 85), no crop or content alteration",
+  "uiDisclosure": "AI로 제작한 수업 예시 이미지"
+}
